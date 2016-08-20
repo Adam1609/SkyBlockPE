@@ -215,7 +215,7 @@ class SkyBlock extends PluginBase implements Listener{
 		
 		$chunks = $plotLevel->chunks;
 		$roadWidth = 0;
-		$totalSize = $chunks * 16 + $roadWidth;
+		$totalSize = $chunks * 12 + $roadWidth;
 		$x = $totalSize * $plot->X;
 		$z = $totalSize * $plot->Z;
 		$level = $this->getServer()->getLevelByName($plot->levelName);
