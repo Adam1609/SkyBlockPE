@@ -130,60 +130,60 @@ class SkyBlockGenerator extends Generator{
 				if($type === self::ISLAND){ // island
 					for($isx = 4; $isx < 11; $isx++){
 						for($isz = 4; $isz < 11; $isz++){
-							$chunk->setBlock($isx, $this->groundHeight + (68 - 64), $isz, Block::GRASS);
+							$chunk->setBlock($isx - 4, $this->groundHeight + (68 - 64), $isz - 4, Block::GRASS);
 						}
 					}
 					for($isx = 5; $isx < 10; $isx++){
 						for($isz = 5; $isz < 10; $isz++){
-							$chunk->setBlock($isx, $this->groundHeight + (67 - 64), $isz, Block::DIRT);
-							$chunk->setBlock($isx, $this->groundHeight + (72 - 64), $isz, Block::LEAVES); // 72
+							$chunk->setBlock($isx - 4, $this->groundHeight + (67 - 64), $isz - 4, Block::DIRT);
+							$chunk->setBlock($isx - 4, $this->groundHeight + (72 - 64), $isz - 4, Block::LEAVES); // 72
 						}
 					}
 					for($isx = 6; $isx < 9; $isx++){
 						for($isz = 6; $isz < 9; $isz++){
-							$chunk->setBlock($isx, $this->groundHeight + (73 - 64), $isz, Block::LEAVES); // 73
-							$chunk->setBlock($isx, $this->groundHeight + (66 - 64), $isz, Block::DIRT); // 66
+							$chunk->setBlock($isx - 4, $this->groundHeight + (73 - 64), $isz - 4, Block::LEAVES); // 73
+							$chunk->setBlock($isx - 4, $this->groundHeight + (66 - 64), $isz - 4, Block::DIRT); // 66
 						}
 					}
-					$chunk->setBlock(7, $this->groundHeight + (64 - 64), 7, Block::BEDROCK); // 0
-					$chunk->setBlock(7, $this->groundHeight + (65 - 64), 7, Block::SAND); // 1
-					$chunk->setBlock(7, $this->groundHeight + (66 - 64), 7, Block::SAND); // 2
-					$chunk->setBlock(7, $this->groundHeight + (67 - 64), 7, Block::SAND); // 3
-					$chunk->setBlock(7, $this->groundHeight + (69 - 64), 7, Block::LOG); // 5
-					$chunk->setBlock(7, $this->groundHeight + (70 - 64), 7, Block::LOG); // 6
-					$chunk->setBlock(7, $this->groundHeight + (71 - 64), 7, Block::LOG); // 7
-					$chunk->setBlock(7, $this->groundHeight + (72 - 64), 7, Block::LOG); // 8
-					$chunk->setBlock(7, $this->groundHeight + (73 - 64), 7, Block::LOG); // 9
-					$chunk->setBlock(4, $this->groundHeight + (68 - 64), 4, Block::AIR); // 68
-					$chunk->setBlock(4, $this->groundHeight + (68 - 64), 10, Block::AIR);
-					$chunk->setBlock(10, $this->groundHeight + (68 - 64), 4, Block::AIR);
-					$chunk->setBlock(10, $this->groundHeight + (68 - 64), 10, Block::AIR);
-					$chunk->setBlock(5, $this->groundHeight + (72 - 64), 5, Block::AIR); // 72
-					$chunk->setBlock(5, $this->groundHeight + (72 - 64), 9, Block::AIR);
-					$chunk->setBlock(9, $this->groundHeight + (72 - 64), 5, Block::AIR);
-					$chunk->setBlock(9, $this->groundHeight + (72 - 64), 9, Block::AIR);
-					$chunk->setBlock(5, $this->groundHeight + (73 - 64), 7, Block::LEAVES); // 73
-					$chunk->setBlock(7, $this->groundHeight + (73 - 64), 5, Block::LEAVES);
-					$chunk->setBlock(9, $this->groundHeight + (73 - 64), 7, Block::LEAVES);
-					$chunk->setBlock(7, $this->groundHeight + (73 - 64), 9, Block::LEAVES);
-					$chunk->setBlock(7, $this->groundHeight + (74 - 64), 6, Block::LEAVES); // 74
-					$chunk->setBlock(6, $this->groundHeight + (74 - 64), 7, Block::LEAVES);
-					$chunk->setBlock(8, $this->groundHeight + (74 - 64), 7, Block::LEAVES);
-					$chunk->setBlock(7, $this->groundHeight + (74 - 64), 8, Block::LEAVES);
-					$chunk->setBlock(7, $this->groundHeight + (75 - 64), 7, Block::LEAVES); // 75
-					                                                                        // $chunk->setBlock(7, $this->groundHeight + (69 - 64), 8, Block::CHEST);
-					$chunk->setBlock(7, $this->groundHeight + (65 - 64), 8, Block::DIRT); // 65
-					$chunk->setBlock(8, $this->groundHeight + (65 - 64), 7, Block::DIRT);
-					$chunk->setBlock(7, $this->groundHeight + (65 - 64), 6, Block::DIRT);
-					$chunk->setBlock(6, $this->groundHeight + (65 - 64), 7, Block::DIRT);
-					$chunk->setBlock(5, $this->groundHeight + (66 - 64), 7, Block::DIRT); // 66
-					$chunk->setBlock(7, $this->groundHeight + (66 - 64), 5, Block::DIRT);
-					$chunk->setBlock(9, $this->groundHeight + (66 - 64), 7, Block::DIRT);
-					$chunk->setBlock(7, $this->groundHeight + (66 - 64), 9, Block::DIRT);
-					$chunk->setBlock(4, $this->groundHeight + (67 - 64), 7, Block::DIRT); // 67
-					$chunk->setBlock(7, $this->groundHeight + (67 - 64), 4, Block::DIRT);
-					$chunk->setBlock(7, $this->groundHeight + (67 - 64), 10, Block::DIRT);
-					$chunk->setBlock(10, $this->groundHeight + (67 - 64), 7, Block::DIRT);
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (64 - 64), 7 - 4, Block::BEDROCK); // 0
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (65 - 64), 7 - 4, Block::SAND); // 1
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (66 - 64), 7 - 4, Block::SAND); // 2
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (67 - 64), 7 - 4, Block::SAND); // 3
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (69 - 64), 7 - 4, Block::LOG); // 5
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (70 - 64), 7 - 4, Block::LOG); // 6
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (71 - 64), 7 - 4, Block::LOG); // 7
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (72 - 64), 7 - 4, Block::LOG); // 8
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (73 - 64), 7 - 4, Block::LOG); // 9
+					$chunk->setBlock(-4 + 4, $this->groundHeight + (68 - 64), 4 - 4, Block::AIR); // 68
+					$chunk->setBlock(-4 + 4, $this->groundHeight + (68 - 64), 10 - 4, Block::AIR);
+					$chunk->setBlock(-4 + 10, $this->groundHeight + (68 - 64), 4 - 4, Block::AIR);
+					$chunk->setBlock(-4 + 10, $this->groundHeight + (68 - 64), 10 - 4, Block::AIR);
+					$chunk->setBlock(-4 + 5, $this->groundHeight + (72 - 64), 5 - 4, Block::AIR); // 72
+					$chunk->setBlock(-4 + 5, $this->groundHeight + (72 - 64), 9 - 4, Block::AIR);
+					$chunk->setBlock(-4 + 9, $this->groundHeight + (72 - 64), 5 - 4, Block::AIR);
+					$chunk->setBlock(-4 + 9, $this->groundHeight + (72 - 64), 9 - 4, Block::AIR);
+					$chunk->setBlock(-4 + 5, $this->groundHeight + (73 - 64), 7 - 4, Block::LEAVES); // 73
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (73 - 64), 5 - 4, Block::LEAVES);
+					$chunk->setBlock(-4 + 9, $this->groundHeight + (73 - 64), 7 - 4, Block::LEAVES);
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (73 - 64), 9 - 4, Block::LEAVES);
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (74 - 64), 6 - 4, Block::LEAVES); // 74
+					$chunk->setBlock(-4 + 6, $this->groundHeight + (74 - 64), 7 - 4, Block::LEAVES);
+					$chunk->setBlock(-4 + 8, $this->groundHeight + (74 - 64), 7 - 4, Block::LEAVES);
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (74 - 64), 8 - 4, Block::LEAVES);
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (75 - 64), 7 - 4, Block::LEAVES); // 75
+					                                                                                // $chunk->setBlock( -4 +7, $this->groundHeight + (69 - 64), 8 -4, Block::CHEST);
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (65 - 64), 8 - 4, Block::DIRT); // 65
+					$chunk->setBlock(-4 + 8, $this->groundHeight + (65 - 64), 7 - 4, Block::DIRT);
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (65 - 64), 6 - 4, Block::DIRT);
+					$chunk->setBlock(-4 + 6, $this->groundHeight + (65 - 64), 7 - 4, Block::DIRT);
+					$chunk->setBlock(-4 + 5, $this->groundHeight + (66 - 64), 7 - 4, Block::DIRT); // 66
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (66 - 64), 5 - 4, Block::DIRT);
+					$chunk->setBlock(-4 + 9, $this->groundHeight + (66 - 64), 7 - 4, Block::DIRT);
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (66 - 64), 9 - 4, Block::DIRT);
+					$chunk->setBlock(-4 + 4, $this->groundHeight + (67 - 64), 7 - 4, Block::DIRT); // 67
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (67 - 64), 4 - 4, Block::DIRT);
+					$chunk->setBlock(-4 + 7, $this->groundHeight + (67 - 64), 10 - 4, Block::DIRT);
+					$chunk->setBlock(-4 + 10, $this->groundHeight + (67 - 64), 7 - 4, Block::DIRT);
 				}
 				elseif($type === self::PLOT){ // PLOT
 					                              // $chunk->setBlock($X, $groundHeight, $Z, $plotFloorBlockId, $plotFloorBlockMeta);
